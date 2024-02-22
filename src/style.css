@@ -1,0 +1,72 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/247/original/food.jpg?1708556014");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  margin: 80px auto;
+  max-width: 700px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+
+  font-size: 42px;
+}
+
+form {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.entry {
+  width: 600px;
+  padding: 18px;
+  border-radius: 50px;
+  font-size: 16px;
+  border: none;
+}
+
+.example {
+  margin-top: 0;
+  margin-left: 20px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.generate-button {
+  margin: 20px auto;
+  display: block;
+  border-radius: 50px;
+  padding: 18px 30px;
+  width: 300px;
+  font-size: 18px;
+  background-color: #5d6901;
+  color: #ffffff;
+  border: none;
+}
+.generate-button:hover {
+  background-color: #5d6901c9;
+}
+a {
+  color: #5d6901;
+  font-weight: bold;
+}
+.recipe {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 14px;
+}
