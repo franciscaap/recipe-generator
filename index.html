@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +10,8 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
   <body>
@@ -27,6 +28,7 @@
             required
             autofocus
             class="entry"
+            id="user-instructions"
           />
           <p class="example">eg mozzarella, tomato...etc</p>
           <input type="submit" value="Generate" class="generate-button" />
