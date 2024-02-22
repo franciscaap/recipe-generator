@@ -17,6 +17,10 @@ function generateRecipe(event) {
     "you are an Italian culinary exper and you give short recipes. You make sure to follow the user instructions when generating the recipes.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.add("hidden");
+  recipeElement.innerHTML = `<div class= generating>⌛ Generating an Italian recipe with ${userInstructions.value}</div>`;
+
   axios.get(apiUrl).then(displayRecipe);
 }
 

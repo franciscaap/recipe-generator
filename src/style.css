@@ -34,7 +34,7 @@ form {
 }
 
 .example {
-  margin-top: 0;
+  margin-top: 5px;
   margin-left: 20px;
   opacity: 0.8;
   font-size: 14px;
@@ -52,6 +52,7 @@ form {
 }
 .generate-button:hover {
   background-color: #5d6901c9;
+  transition: all 200ms ease-in-out;
 }
 a {
   color: #5d6901;
@@ -62,14 +63,30 @@ a {
   width: 650px;
   padding: 20px;
   margin: 0 auto;
+  display: none;
   border-radius: 15px;
   line-height: 24px;
   box-shadow: 5px 5px 5px rgba(125, 125, 255, 0.2);
 }
+
+.hidden {
+  display: block;
+}
+
 .recipe strong {
   font-size: 40px;
   color: #5d6901;
 }
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.generating {
+  animation: blink 1.5s step-start 0s infinite;
+}
+
 footer {
   text-align: center;
 
