@@ -12,9 +12,9 @@ function generateRecipe(event) {
 
   let userInstructions = document.querySelector("#user-instructions");
   let apiKey = "9b00a0b2o792ct546c043d35bf49a6e3";
-  let prompt = `uesr instructions: Please generate an italian cuisine recipe using ${userInstructions.value}. Generate it in basic HTML format and seperate instuctions from ingredients. Wrap the recipe name in html strong. Please do not acknowlege user.`;
+  let prompt = `uesr instructions: Please generate an italian cuisine recipe using ${userInstructions.value}. Generate it in basic HTML format and seperate the instuctions from the ingredients using paragraphs. Wrap the recipe name in html div and strong. Please do not acknowlege user.`;
   let context =
-    "you are an Italian culinary exper and you give short recipes. You make sure to follow the user instructions when generating the recipes.";
+    "you are an Italian culinary expert and you give short recipes. You make sure to follow the user instructions when generating the recipes.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#recipe");
